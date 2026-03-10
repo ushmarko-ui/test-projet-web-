@@ -188,18 +188,20 @@
             </tr>
           </thead>
           <tbody id="table-body">
-            <tr>
-              <td class="text-center">
-                <button class="btn-delete btn-supprimer">🗑️</button>
-              </td>
-              <td>1</td>
-              <td>Engie</td>
-              <td>Informatique</td>
-              <td>@Engie</td>
-              <td>contact.engie@gmail.com</td>
-              <td>3 mois</td>
-            </tr>
-          </tbody>
+    {% for offre in offres %}
+    <tr>
+        <td class="text-center">
+            <button class="btn-delete btn-supprimer">🗑️</button>
+        </td>
+        <td>{{ offre.id }}</td>
+        <td>{{ offre.nom }}</td>
+        <td>{{ offre.domaine }}</td>
+        <td>{{ offre.lieu }}</td>
+        <td>{{ offre.email }}</td>
+        <td>{{ offre.duree }}</td>
+    </tr>
+    {% endfor %}
+</tbody>
         </table>
       </div>
     </div>

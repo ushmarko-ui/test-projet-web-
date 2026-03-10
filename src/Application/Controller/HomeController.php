@@ -68,17 +68,12 @@ class HomeController
         return $view->render($response, 'gestion_pilotes.html.twig', []);
     }
 
-    public function gestion_offres(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
-    {
-        $view = Twig::fromRequest($request);
-        return $view->render($response, 'gestion_offres.html.twig', []);
-    }
-
     public function creation_compte(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $view = Twig::fromRequest($request);
         return $view->render($response, 'page_creation_compte.html.twig', []);
     }
+
     public function mentions(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
         $view = Twig::fromRequest($request);
