@@ -32,4 +32,5 @@ return function (App $app) {
     $app->get('/gestion_offres', [OffreController::class, 'gestion_offres']);
     $app->get('/creation_compte', [HomeController::class, 'creation_compte']);
     $app->get('/mentions', [HomeController::class, 'mentions']);
+    $app->get('/postule', [HomeController::class, 'Formulaire_postule']);
 };
